@@ -3,6 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/bootstrap.css" type="text/css" rel="stylesheet">
+  <link href="css/styles.css" type="text/css" rel="stylesheet">
+  <script src="js/scripts.js"></script>
+  <script src="js/jquery-3.4.1.js.4.1.js"></script>
+
   <title>Roman Numeral Converter</title>
 </head>
 <body>
@@ -11,10 +16,12 @@
       <div class="card">
         <h1>Number to Roman Numeral Converter</h1>
         <p>Enter an integer to find the corresponding Roman Numeral</p>
-        <form id="formOne" class="from-control">
-          <input id="number" type="number">
-          <button class="btn btn-dark">Convert</button>
+        <form id="formOne" class="form-control">
+          <input id="number" type="number" min="1" max="3999">
+          <button class="btn btn-dark" type="submit">Convert</button>
         </form>
+      </div>
+      <div class="card" id="result">
       </div>
     </div>
   </div>
